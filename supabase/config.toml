@@ -265,3 +265,6 @@ sql_paths = ['./seeds/staging.sql']
 enabled = true
 client_id = "test-client"
 secret = "env(SUPABASE_AUTH_EXTERNAL_APPLE_SECRET)"
+
+[functions.hello]
+enabled = true
