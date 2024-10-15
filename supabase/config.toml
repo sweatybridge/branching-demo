@@ -106,3 +106,9 @@ vector_port = 54328
 gcp_project_id = ""
 gcp_project_number = ""
 gcp_jwt_path = "supabase/gcloud.json"
+
+[storage.buckets.images]
+public = false
+file_size_limit = "50MiB"
+allowed_mime_types = ["image/png", "image/jpeg"]
+objects_path = "./images"
