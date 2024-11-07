@@ -246,6 +246,9 @@ s3_access_key = "env(S3_ACCESS_KEY)"
 # Configures AWS_SECRET_ACCESS_KEY for S3 bucket
 s3_secret_key = "env(S3_SECRET_KEY)"
 
+[experimental.webhooks]
+enabled = true
+
 [remotes.staging]
 project_id = "bvikqvbczudanvggcord"
 
