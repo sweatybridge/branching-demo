@@ -13,7 +13,7 @@ schemas = ["public", "graphql_public"]
 extra_search_path = ["public", "extensions"]
 # The maximum number of rows returns from a view, table, or stored procedure. Limits payload size
 # for accidental or malicious requests.
-max_rows = 100
+max_rows = 1000
 
 [api.tls]
 enabled = false
@@ -176,8 +176,8 @@ max_enrolled_factors = 10
 
 # Control use of MFA via App Authenticator (TOTP)
 [auth.mfa.totp]
-enroll_enabled = true
-verify_enabled = true
+enroll_enabled = false
+verify_enabled = false
 
 # Configure Multi-factor-authentication via Phone Messaging
 # [auth.mfa.phone]
