@@ -1,3 +1,3 @@
-# cli-demo
+# branching-demo
 
-Demo project for setting up local development.
+Demo project for setting up Supabase Branching.
