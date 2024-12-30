@@ -256,3 +256,4 @@ enabled = true
 project_id = "bvikqvbczudanvggcord"
 
 [remotes.staging.db.seed]
+enabled = true
