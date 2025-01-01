@@ -254,3 +254,4 @@ project_id = "bvikqvbczudanvggcord"
 
 [remotes.staging.db.seed]
 enabled = true
+sql_paths = ['./seeds/staging.sql']
