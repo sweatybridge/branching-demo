@@ -2,6 +2,9 @@
   "name": "branching-demo",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "echo '[my-app] build finished'"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
