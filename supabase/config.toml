@@ -173,6 +173,12 @@ enabled = true
 originator = "+12341234123"
 access_key = "env(SUPABASE_AUTH_SMS_TWILIO_AUTH_TOKEN)"
 
+[auth.external.google]
+enabled = true
+client_id = "env(NEXT_PUBLIC_GOOGLE_CLIENT_ID)"
+secret = "env(GOOGLE_CLIENT_SECRET)"
+redirect_uri = "http://localhost:54321/auth/v1/callback"
+
 [auth.external.azure]
 enabled = true
 client_id = "env(MICROSOFT_CLIENT_ID)"
