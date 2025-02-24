@@ -5,6 +5,10 @@ project_id = "branching-demo"
 [api]
 schemas = ["public", "graphql_public", "customer_support"]
 
+[db.vault]
+project_url = "env(SUPABASE_PROJECT_URL)"
+anon_key = "env(SUPABASE_AUTH_ANON_KEY)"
+
 # Use an external OAuth provider. The full list of providers are: `apple`, `azure`, `bitbucket`,
 # `discord`, `facebook`, `github`, `gitlab`, `google`, `keycloak`, `linkedin`, `notion`, `twitch`,
 # `twitter`, `slack`, `spotify`, `workos`, `zoom`.
