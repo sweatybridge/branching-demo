@@ -9,6 +9,9 @@ schemas = ["public", "graphql_public", "customer_support"]
 project_url = "env(SUPABASE_PROJECT_URL)"
 anon_key = "env(SUPABASE_AUTH_ANON_KEY)"
 
+[experimental.webhooks]
+enabled = true
+
 # Use an external OAuth provider. The full list of providers are: `apple`, `azure`, `bitbucket`,
 # `discord`, `facebook`, `github`, `gitlab`, `google`, `keycloak`, `linkedin`, `notion`, `twitch`,
 # `twitter`, `slack`, `spotify`, `workos`, `zoom`.
@@ -30,5 +33,11 @@ redirect_uri = "http://localhost:54321/auth/v1/callback"
 # or any other third-party OIDC providers.
 url = ""
 
-[experimental.webhooks]
+[auth.email.smtp]
 enabled = true
+host = "smtp.sendgrid.net"
+port = 587
+user = "apikey"
+pass = "env(SENDGRID_API_KEY)"
+admin_email = "admin@email.com"
+sender_name = "Admin"
