@@ -41,3 +41,6 @@ user = "apikey"
 pass = "env(SENDGRID_API_KEY)"
 admin_email = "admin@email.com"
 sender_name = "Admin"
+
+[edge_runtime.secrets]
+SMTP_SECRET = "env(SENDGRID_API_KEY)"
