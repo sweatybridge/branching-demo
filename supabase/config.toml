@@ -45,5 +45,10 @@ pass = "env(SENDGRID_API_KEY)"
 admin_email = "admin@email.com"
 sender_name = "Admin"
 
+[auth.captcha]
+enabled = true
+provider = "turnstile"
+secret = "env(TURNSTILE_SECRET)"
+
 [edge_runtime.secrets]
 SMTP_SECRET = "env(SENDGRID_API_KEY)"
