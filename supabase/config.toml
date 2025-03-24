@@ -46,7 +46,7 @@ admin_email = "admin@email.com"
 sender_name = "Admin"
 
 [auth.captcha]
-enabled = true
+enabled = false
 provider = "turnstile"
 secret = "env(TURNSTILE_SECRET)"
 
