@@ -11,6 +11,8 @@ SET client_min_messages = warning;
 SET row_security = off;
 SET pgaudit.log = 'none';
 
+-- CREATE EXTENSION IF NOT EXISTS "pgsodium" WITH SCHEMA "pgsodium";
+
 COMMENT ON SCHEMA "public" IS 'standard public schema';
 
 CREATE EXTENSION IF NOT EXISTS "pg_graphql" WITH SCHEMA "graphql";
