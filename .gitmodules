@@ -1,0 +1,3 @@
+[submodule "supabase-grafana"]
+	path = supabase-grafana
+	url = git@github.com:supabase/supabase-grafana.git
